@@ -3,22 +3,22 @@ import java.util.Arrays;
 public class Assignment01Q04 {
 
     public static int[] shiftArrayCyclic(int[] array, int move, char direction) {
-        if(direction != 'L' && direction != 'R') {
+        if (direction != 'L' && direction != 'R') {
             return array;
         }
         if (array.length == 0 || move == 0) {
             return array;
         }
-        if(direction =='L') {
+        if (direction =='L') {
             move = -move;
         }
         int length = array.length;
         move = ((move % length) + length) % length; 
         int [] temp = new int[length];
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < length; i++) {
             temp[(i + move) % length] = array[i];
         }
-        for(int i = 0; i < array.length; i++) {
+        for (int i = 0; i < length; i++) {
             array[i] = temp[i];
         }
         

@@ -4,7 +4,7 @@ public class Assignment01Q05 {
             return 0;
         }
         int n = m.length;
-        int[] distances = new int[m.length];
+        int[] distances = new int[n];
         for (int k = 0; k < n; k++) {
             distances[k] = -1;
         }
@@ -29,7 +29,6 @@ public class Assignment01Q05 {
             if (!foundNewVertex) {
                 break;
             }
-
         }
         return -1;
     }

@@ -17,9 +17,7 @@ public class Assignment01Q03 {
             current = next;
             next = sum;
         }
-
-        System.out.println();
-                
+        System.out.println();  
         System.out.println("The number of odd numbers is: " + numOdd);
     }
 }
